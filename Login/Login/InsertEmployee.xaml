@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Login.InsertEmployee"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Login"
+             mc:Ignorable="d" Height="536.083" Width="824.742">
+    <Grid Margin="10,0,0,10">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="396" Margin="3,3,-83,0" Stroke="#FF253DD1" VerticalAlignment="Top" Width="758"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="8,3,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="13,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="8,51,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="23" Margin="13,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="8,97,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="13,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="8,140,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Height="39" Margin="13,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Button x:Name="BTN_Save" Content="Save" HorizontalAlignment="Left" Margin="578,284,0,0" VerticalAlignment="Top" Width="94" Height="25" Background="#FF5656CD" Foreground="White" BorderBrush="#FFFFF5F5" Click="BTN_Save_Click"/>
+        <Label Content="PlaceBrith" HorizontalAlignment="Left" Margin="8,203,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox x:Name="placebirth" HorizontalAlignment="Left" Height="23" Margin="13,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Label Content="BrithDate" HorizontalAlignment="Left" Margin="8,255,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <DatePicker x:Name="birthdate" HorizontalAlignment="Left" Margin="13,277,0,0" VerticalAlignment="Top" Width="296"/>
+        <Label Content="NIK" HorizontalAlignment="Left" Margin="8,306,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox x:Name="nik" HorizontalAlignment="Left" Height="23" Margin="13,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Label Content="Religion" HorizontalAlignment="Left" Margin="374,3,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <ComboBox x:Name="religion" HorizontalAlignment="Left" Margin="376,26,0,0" VerticalAlignment="Top" Width="296">
+            <ComboBoxItem Content="Islam"/>
+            <ComboBoxItem Content="Kristen"/>
+            <ComboBoxItem Content="Hindu"/>
+            <ComboBoxItem Content="Budha"/>
+            <ComboBoxItem Content="Konghucu"/>
+        </ComboBox>
+        <Label Content="NPWP" HorizontalAlignment="Left" Margin="374,53,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" RenderTransformOrigin="0.543,-0.346"/>
+        <TextBox x:Name="npwp" HorizontalAlignment="Left" Height="23" Margin="376,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Label Content="Bachelor" HorizontalAlignment="Left" Margin="373,96,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <ComboBox x:Name="bachelor" HorizontalAlignment="Left" Margin="376,119,0,0" VerticalAlignment="Top" Width="296">
+            <ComboBoxItem Content="SLTA Sederajat"/>
+            <ComboBoxItem Content="D3"/>
+            <ComboBoxItem Content="S1"/>
+            <ComboBoxItem Content="S2"/>
+        </ComboBox>
+        <Label Content="University" HorizontalAlignment="Left" Margin="373,141,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox x:Name="university" HorizontalAlignment="Left" Height="23" Margin="376,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <Label Content="JoinDate" HorizontalAlignment="Left" Margin="376,189,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <DatePicker x:Name="joindate" HorizontalAlignment="Left" Margin="376,212,0,0" VerticalAlignment="Top" Width="296"/>
+
+    </Grid>
+</UserControl>

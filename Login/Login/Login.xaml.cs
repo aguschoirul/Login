@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Dapper;
 using System.Configuration;
+using BCrypt.Net;
 
 namespace Login
 {
@@ -23,7 +24,7 @@ namespace Login
     /// </summary>
     public partial class MainWindow : Window
     {
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString);
+        SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString);
 
         public MainWindow()
         {
@@ -32,9 +33,11 @@ namespace Login
 
         private void BTN_Login_Click(object sender, RoutedEventArgs e)
         {
-            var check = con.QueryAsync<Class1>("exec SP_Retrieve_Login @username,@password",
-              new {username = username.Text, password = password.Password}).Result.SingleOrDefault();
-            if (check != null)
+            string myPassword = password.Password;
+            var getPassword = sqlConnection.Query<Class1>("SELECT * FROM TB_M_Login WHERE username = @username",
+              new {username = username.Text}).SingleOrDefault();
+            var result = BCrypt.Net.BCrypt.Verify(myPassword, getPassword.password);
+            if (result)
             {
               this.Hide();
               new Window1().Show();
@@ -42,8 +45,11 @@ namespace Login
             }
             else
                 MessageBox.Show(this, "Username Atau Password Salah", "Message");
+        }
 
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            new Window3().Show();
         }
     }
 }
-

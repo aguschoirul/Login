@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="Login Page" Height="550" Width="400" ResizeMode="NoResize">
+        Title="Login Page" Height="575" Width="400" ResizeMode="NoResize">
     <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250*"/>
@@ -18,7 +18,7 @@
         <Image Source="assets/cashier.png" Margin="90,28,88,345">
         </Image>
         <PasswordBox Name="password" HorizontalAlignment="Left" Margin="32,350,0,0" VerticalAlignment="Top" Width="330" Height="37"/>
-        <Button Content="Forgot Password ?" HorizontalAlignment="Left" Margin="152,467,0,0" VerticalAlignment="Top" Width="102" Background="#FFFFFCFC" Foreground="#FF1818D1" FontFamily="Palatino Linotype" BorderBrush="White"/>
-
+        <Button Content="Forgot Password ?" HorizontalAlignment="Left" Margin="152,505,0,0" VerticalAlignment="Top" Width="102" Background="#FFFFFCFC" Foreground="#FF1818D1" FontFamily="Palatino Linotype" BorderBrush="White"/>
+        <Button Name="Register" Click="Register_Click" Content="Register" HorizontalAlignment="Left" Margin="32,467,0,0" VerticalAlignment="Top" Width="330" Height="33" Background="#FF24971E" Foreground="#FFFFF5F5"/>
     </Grid>
 </Window>

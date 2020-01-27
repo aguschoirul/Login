@@ -6,18 +6,53 @@ using System.Threading.Tasks;
 
 namespace Login
 {
-    class Class1
+    public class Class1
     {
         public string username { get; set; }
         public string password { get; set; }
     }
 
-    class Insert
+    public class Insert
     {
-        public string id { get; set; }
         public string name { get; set; }
         public string phone { get; set; }
         public string email { get; set; }
         public string address { get; set; }
+        public string placebirth { get; set; }
+        public string birthdate { get; set; }
+        public string nik { get; set; }
+        public string religion { get; set; }
+        public string npwp { get; set; }
+        public string bachelor { get; set; }
+        public string university { get; set; }
+        public string joindate { get; set; }
+    }
+
+    public class InsertDepartmen
+    {
+        public string name { get; set; }
+        public string manager { get; set; }
+    }
+
+    public class Department
+    {
+        public string name { get; set; }
+        public string manager { get; set; }
+    }
+
+    public class DetailEmploye
+    {
+        public string name { get; set; }
+        public string phone { get; set; }
+        public string email { get; set; }
+        public string address { get; set; }
+        public string placebirth { get; set; }
+        public string birthdate { get; set; }
+        public string nik { get; set; }
+        public string religion { get; set; }
+        public string npwp { get; set; }
+        public string bachelor { get; set; }
+        public string university { get; set; }
+        public string joindate { get; set; }
     }
 }

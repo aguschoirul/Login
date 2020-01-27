@@ -16,3 +16,15 @@ E:\Bootcamp\Git\Login\Login\Login\bin\Debug\Dapper.dll
 E:\Bootcamp\Git\Login\Login\Login\bin\Debug\Dapper.xml
 E:\Bootcamp\Git\Login\Login\Login\obj\Debug\Window1.g.cs
 E:\Bootcamp\Git\Login\Login\Login\obj\Debug\Window1.baml
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\Window2.g.cs
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\Window2.baml
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\DetailEmployee.g.cs
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\InsertEmployee.g.cs
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\DetailEmployee.baml
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\InsertEmployee.baml
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\InsertDepartment.g.cs
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\InsertDepartment.baml
+E:\Bootcamp\Git\Login\Login\Login\bin\Debug\BCrypt.Net.dll
+E:\Bootcamp\Git\Login\Login\Login\bin\Debug\BCrypt.Net.xml
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\Window3.g.cs
+E:\Bootcamp\Git\Login\Login\Login\obj\Debug\Window3.baml

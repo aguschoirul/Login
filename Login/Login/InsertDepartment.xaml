@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Login.InsertDepartment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Login"
+             mc:Ignorable="d" Height="509.278" Width="904.124">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="489" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="874"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="21,20,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox Name="name" HorizontalAlignment="Left" Height="23" Margin="27,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232"/>
+        <Label Content="Manager" HorizontalAlignment="Left" Margin="289,20,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype"/>
+        <TextBox Name="manager" HorizontalAlignment="Left" Height="23" Margin="295,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232"/>
+        <Button Name="SaveDept" Click="SaveDept_Click" Content="Save" HorizontalAlignment="Left" Margin="534,46,0,0" VerticalAlignment="Top" Width="113" Height="23" Background="#FF5656CD" Foreground="White" FontFamily="Palatino Linotype"/>
+        <DataGrid Name="Department" AutoGenerateColumns="True" Loaded="DataDepartmenet_Loaded" HorizontalAlignment="Left" Height="352" Margin="27,133,0,0" VerticalAlignment="Top" Width="620" SelectedCellsChanged="Department_SelectedCellsChanged"/>
+        <Button Name="Delete" Click="Delete_Click" Content="Delete" HorizontalAlignment="Left" Margin="534,102,0,0" VerticalAlignment="Top" Width="113" Height="25" Background="#FFEE1C1C" Foreground="White" FontFamily="Palatino Linotype"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="534,73,0,0" VerticalAlignment="Top" Width="113" Height="25" Background="#FF1B9731" Foreground="White"/>
+    </Grid>
+</UserControl>

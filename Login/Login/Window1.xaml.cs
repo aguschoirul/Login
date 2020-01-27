@@ -22,25 +22,30 @@ namespace Login
     /// </summary>
     public partial class Window1 : Window
     {
-        SqlConnection SqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString);
-
         public Window1()
         {
             InitializeComponent();
         }
 
-        private void BTN_Save_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var check = SqlCon.QueryAsync<Insert>("exec SP_Retrieve_Employee @id,@name,@phone,@email,@address",
-              new { id = id.Text , name = name.Text, phone = phone.Text, email = email.Text, address = address.Text }).Result.SingleOrDefault();
-            MessageBox.Show("Data has been entered");
+            DetailEmployee Detail = new DetailEmployee();
+            SPContent.Children.Clear();
+            SPContent.Children.Add(Detail);
         }
 
-        private void BTN_Update_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var check = SqlCon.QueryAsync<Insert>("exec SP_Retrieve_Update @id,@name,@phone,@email,@address",
-              new { id = id.Text, name = name.Text, phone = phone.Text, email = email.Text, address = address.Text }).Result.SingleOrDefault();
-            MessageBox.Show("Data has been Changed");
+            InsertEmployee HalamanInsert = new InsertEmployee();
+            SPContent.Children.Clear();
+            SPContent.Children.Add(HalamanInsert);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            InsertDepartment InsertDepartment = new InsertDepartment();
+            SPContent.Children.Clear();
+            SPContent.Children.Add(InsertDepartment);
         }
     }
 }
